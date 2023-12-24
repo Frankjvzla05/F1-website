@@ -16,21 +16,24 @@ img {
 }
 
 body {
-  max-width: 1680px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+
 }
 
-main{
+main {
   flex: 1;
-  margin-top: 111px;
+  margin-top: 105px;
 }
 
 .header {
-  max-width: 1680px;
   margin: auto;
   background-color: #e10600;
-  padding: 1.5rem 0 1.5rem 2rem;
+  padding: 1.3rem 0 1.3rem 2rem;
 }
+
 .header {
   background-color: #e10600;
 }
@@ -235,13 +238,15 @@ input[type="radio"] {
   }
 }
 
-.container-footer {
-  max-width: 1680px;
-  margin: auto;
+.footer {
   background-color: #333;
-  color: #fff;
-  padding: 1.5rem 2rem;
-  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-logo img {
@@ -272,6 +277,38 @@ ol li {
 .info-items {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
   font-size: 1.2rem;
+  width: 90%;
+}
+
+/*------ Grid seccion Circuitos */
+.containerGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.containerImage {
+  grid-column: 1 / 7;
+  grid-row: 2 / 5;
+}
+
+.containerImageMap {
+  grid-column: 5 / 7;
+  grid-row: 2 / 4;
+}
+
+.info-section-circuits {
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+  align-self: flex-center;
+}
+@media (max-width: 768px) {
+  .containerGrid {
+    display: flex;
+    flex-direction: column;   
+  }
 }
