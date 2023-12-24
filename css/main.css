@@ -200,6 +200,7 @@ input[type="radio"] {
 
 .video-block {
   display: none;
+  width: 560px;
 }
 
 @media (min-width: 40em) {
@@ -218,11 +219,6 @@ input[type="radio"] {
   .text-block {
     box-sizing: border-box;
     margin-right: 1.5rem;
-  }
-
-  .text-block,
-  .video-block {
-    width: 50%;
   }
 }
 
@@ -306,9 +302,10 @@ ol li {
   grid-row: 1 / 2;
   align-self: flex-center;
 }
+
 @media (max-width: 768px) {
   .containerGrid {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
   }
 }
