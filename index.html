@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ingresa al mundo de la Fórmula 1. Tu fuente principal para las últimas noticias de F1, videoresúmenes, resultados de Grand Prix, cronometraje en vivo, análisis en profundidad y comentarios de expertos." />
+    <meta name="keywords" content="Formula 1, F1, Carreras de automovilismo, Grand Prix, Automovilismo, Velocidad">
     <link rel="icon" href="./img/formula-1-logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Formula 1 - website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>F1 - El Hogar Oficial de la Formula 1®</title>
 </head>
 
 <body>
@@ -18,7 +21,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand logo" href="#">
-                    <img src="./img/f1_logo.svg" alt="F1 logo">
+                    <img src="./img/f1_logo.svg" alt="F1 logo" title="F1 logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,9 +29,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav ml-auto menu">
+                        <li class="nav-item"><a href="pages/pilots.html" class="nav-link">Pilotos</a></li>
                         <li class="nav-item"><a href="pages/circuits.html" class="nav-link">Circuitos</a></li>
                         <li class="nav-item"><a href="pages/ranking.html" class="nav-link">Ranking</a></li>
-                        <li class="nav-item"><a href="pages/pilots.html" class="nav-link">Pilotos</a></li>
                         <li class="nav-item"><a href="pages/calendar.html" class="nav-link">Calendario</a></li>
                         <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Contactos</a></li>
                     </ul>
@@ -45,7 +48,8 @@
                         <picture>
                             <source media="(min-width: 768px)" srcset="./img/1-main-banner-desk.jpg">
                             <source media="(max-width: 767px)" srcset="https://picsum.photos/600/280?random=1">
-                            <img src="./img/1-main-banner-desk.jpg" class="d-block w-100" alt="Banner Fórmula 1">
+                            <img src="./img/1-main-banner-desk.jpg" class="d-block w-100" alt="Banner Fórmula 1"
+                                title="Banner Fórmula 1">
                         </picture>
                     </div>
                     <div class="carousel-item">
@@ -53,15 +57,15 @@
                             <source media="(min-width: 768px)" srcset="https://picsum.photos/1920/500?random=1">
                             <source media="(max-width: 767px)" srcset="https://picsum.photos/600/280?random=1">
                             <img src=".https://picsum.photos/1920/500?random=1" class="d-block w-100"
-                                alt="Banner Fórmula 1">
+                                alt="Banner 2 Fórmula 1" title="Banner 2 Fórmula 1">
                         </picture>
                     </div>
-                    <div class="carousel-item">
+                    <div class=" carousel-item">
                         <picture>
                             <source media="(min-width: 768px)" srcset="https://picsum.photos/1920/500?random=1">
                             <source media="(max-width: 767px)" srcset="https://picsum.photos/600/280?random=1">
                             <img src=".https://picsum.photos/1920/500?random=1" class="d-block w-100"
-                                alt="Banner Fórmula 1">
+                                alt="Banner 3 Fórmula 1" title="Banner 3 Fórmula 1">
                         </picture>
                     </div>
                 </div>
@@ -89,33 +93,52 @@
             <div class="highlight-container row justify-content-center align-items-center">
 
                 <div class="highlight-item col-lg-4 col-md-6 col-12">
-                    <img src="./img/1-momentos-destacados.jpg" alt="Imagen Destacada 1">
-                    <p>Descubre los mejores momentos de la temporada.</p>
+                    <a href="pages/circuits.html">
+                        <img class="highlight-img" src="./img/1-momentos-destacados.jpg" alt="Imagen Destacada 1"
+                            title="Imagen Destacada 1">
+                        <p>Historia de los Circuitos de F1.</p>
+                    </a>                    
                 </div>
 
                 <div class="highlight-item col-lg-4 col-md-6 col-12">
-                    <img src="./img/2-pilotos.jpg" alt="Imagen Destacada 2">
-                    <p>Conoce a los pilotos más destacados de la F1.</p>
+                    <a href="pages/pilots.html">
+                        <img class="highlight-img" src="./img/2-pilotos.jpg" alt="Imagen Destacada 2"
+                            title="Imagen Destacada 2">
+
+                        <p>Conoce a los pilotos más destacados de la F1.</p>
+                    </a>
                 </div>
 
                 <div class="highlight-item col-lg-4 col-md-6 col-12">
-                    <img src="./img/3-paddock.jpg" alt="Imagen Destacada 3">
-                    <p>Detrás de escena: Vida en el paddock.</p>
+                    <a href="pages/calendar.html">
+                        <img class="highlight-img" src="./img/3-paddock.jpg" alt="Imagen Destacada 3"
+                            title="Imagen Destacada 3">
+                        <p>Descubre el calendario del Mundial F1</p>
+                    </a>
                 </div>
 
                 <div class="highlight-item col-lg-4 col-md-6 col-12">
-                    <img src="./img/4-equipos.jpg" alt="Imagen Destacada 4">
-                    <p>Los equipos y sus estrategias de carrera.</p>
+                    <a href="pages/ranking.html">
+                        <img class="highlight-img" src="./img/4-equipos.jpg" alt="Imagen Destacada 4"
+                            title="Imagen Destacada 4">
+                        <p>Los equipos y sus estrategias de carrera.</p>
+                    </a>
                 </div>
 
                 <div class="highlight-item col-lg-4 col-md-6 col-12">
-                    <img src="./img/5-circuitos.jpg" alt="Imagen Destacada 5">
-                    <p>Los circuitos más icónicos de la F1.</p>
+                    <a href="pages/circuits.html">
+                        <img class="highlight-img" src="./img/5-circuitos.jpg" alt="Imagen Destacada 5"
+                            title="Imagen Destacada 5">
+                        <p>Los circuitos más icónicos de la F1.</p>
+                    </a>
                 </div>
 
                 <div class="highlight-item col-lg-4 col-md-6 col-12">
-                    <img src="./img/6-historia-detras-del-volante.jpg" alt="Imagen Destacada 6">
-                    <p>Historias emocionantes detrás del volante.</p>
+                    <a href="pages/contacts.html">
+                        <img class="highlight-img" src="./img/6-historia-detras-del-volante.jpg"
+                            alt="Imagen Destacada 6" title="Imagen Destacada 6">
+                        <p>Contáctanos y participa por premios</p>
+                    </a>
                 </div>
 
             </div>
@@ -131,8 +154,7 @@
             </div>
 
             <div class="video-block">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/k5IC9zDFIDc?si=y76yAs8YptK3U-WF&autoplay=1&mute=1"
+                <iframe src="https://www.youtube.com/embed/k5IC9zDFIDc?si=y76yAs8YptK3U-WF&autoplay=1&mute=1"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -147,7 +169,7 @@
         <div class="container-footer">
             <div class="row align-items-center">
                 <div class="footer-logo col-md-6 text-center text-md-left">
-                    <img src="./img/f1_logo.svg" alt="F1 logo">
+                    <img src="./img/f1_logo.svg" alt="F1 logo" title="F1 logo">
                 </div>
                 <div class="col-md-6 mt-2 text-center text-md-right">
                     <p class="text-white">website made by - Francisco Maduro Cortez - Derechos de autor © 2023</p>

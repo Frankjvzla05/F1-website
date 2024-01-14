@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bolder;
+        font-size: 18px;
+        letter-spacing: .7px;
+        display: block;
+        padding: 10px 10px 10px 0;
+        border: solid 1px #f08380;
+        border-top: 0;
+        border-left: 0;
+        border-bottom-right-radius: 10px;
+        width: 50%;
+    }
+
+    @media (min-width: 48em) {
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+    }
+
+    @media (min-width: 62em) {
+
+        a {
+            border: none;
+        }
+
+    }
+}
